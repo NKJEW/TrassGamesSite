@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="project-page">
+  {% if page.youtubeID != "none" %}
+    {% include youtube.html id=page.youtubeID %}
+  {% else %}
+    <img class="hero" src="/assets/{{ page.id }}_hero.png">
+  {% endif %}
+
+  <div class="project-summary-block">
+    <div class="title-and-dates">
+      <h2 class="title">{{page.title}}</h2>
+      <p class="dates">{{page.dates}}</p>
+    </div>
+    <p>{{page.roles}}</p>
+  </div>
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  <div class="gallery">
+    {% for image in page.images %}
+    <div class="image-with-caption">
+      <img src="/assets/projects/{{ image.filename }}">  
+      <p class="caption">{{image.caption}}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<hr/>
+<h3>Other Projects</h3>
+<hr/>
+{% include project-selector.html %}
