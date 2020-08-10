@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>About Me</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,600" rel="stylesheet">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		</head>
-		<body>
-			<div class="container">
-				<div class="title-bar">
+<div class="title-bar">
 	<div class="logo">
 		<a href="/" title="TRASS GAMES">
 			TRASS GAMES
@@ -47,15 +36,10 @@
 </div>
 
 <!-- <div class="gallery">
-	
+	{% for image in page.images %}
+	<div class="image-with-caption">
+		<img src="/assets/projects/{{ image.filename }}">  
+		<p class="caption">{{image.caption}}</p>
+	</div>
+	{% endfor %}
 </div> -->
-
-
-			# About Me
-
-This will be text about me
-
-
-			</div><!-- /.container -->
-		</body>
-	</html>
