@@ -1,17 +1,17 @@
-<div class="project-selector" id="games">
+<div class="project-selector">
 	{% assign sorted = (site.projects | sort: 'order') %}
 	{% for project in sorted %}
 		{% unless page.url == project.url %}
 		<a href="{{project.url}}" title="View project">
 			<div class="project-preview">
         <img class="preview-image" src="/assets/{{ project.id }}_hero.png">
-				<div class="project-summary-block">
+				<!-- <div class="project-summary-block">
 					<div class="title-and-dates">
 						<h2 class="title">{{project.title}}</h2>
 						<p class="dates">{{project.dates}}</p>
 					</div>
 					<p>{{project.roles}}</p>
-				</div>
+				</div> -->
 			</div>
 		</a>
 		{% endunless %}
