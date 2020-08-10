@@ -1,4 +1,4 @@
-<div class="project-selector">
+<div class="project-selector" id="games">
 	{% assign sorted = (site.projects | sort: 'order') %}
 	{% for project in sorted %}
 		{% unless page.url == project.url %}
