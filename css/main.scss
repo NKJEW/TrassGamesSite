@@ -245,6 +245,11 @@ body {
       }
     }
   }
+  a:hover {
+    img {
+      filter: brightness(80%);
+    }
+  }
 }
 
 /* TITLE BAR */
@@ -263,6 +268,9 @@ body {
   a {
     color: #FFF;
     text-transform: uppercase;
+  }
+  a:hover {
+    filter: brightness(50%);
   }
   .logo {
     white-space: nowrap;
@@ -342,6 +350,9 @@ body {
     a {
       margin-left: 16px;
       color: #FFF;
+    }
+    a:hover {
+      filter: brightness(50%);
     }
   }
 }

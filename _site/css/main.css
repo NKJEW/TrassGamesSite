@@ -185,6 +185,8 @@ body {
         bottom: 8px;
         right: 8px;
         width: 16%; }
+  .project-selector a:hover img {
+    filter: brightness(80%); }
 
 /* TITLE BAR */
 .title-bar {
@@ -198,6 +200,8 @@ body {
   .title-bar a {
     color: #FFF;
     text-transform: uppercase; }
+  .title-bar a:hover {
+    filter: brightness(50%); }
   .title-bar .logo {
     white-space: nowrap; }
   .title-bar .nav-bar {
@@ -251,6 +255,8 @@ body {
     .contact-section .contact-pannel a {
       margin-left: 16px;
       color: #FFF; }
+    .contact-section .contact-pannel a:hover {
+      filter: brightness(50%); }
 
 /* Responsive */
 @media only screen and (max-width: 620px) {
