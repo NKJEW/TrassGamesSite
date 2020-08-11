@@ -2,6 +2,7 @@
 layout: project
 order: 0
 title: "Overboard"
+platform: "vr"
 roles: "Game Design, 3D Modeling, Programming"
 dates: "2019+"
 hasDemo: "false"

@@ -2,6 +2,7 @@
 layout: project
 order: 6
 title: "Flickship"
+platform: "phone"
 roles: "Game Design, Programming, and Art"
 dates: "2016"
 hasDemo: "true"

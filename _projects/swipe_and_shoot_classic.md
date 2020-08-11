@@ -2,6 +2,7 @@
 layout: project
 order: 5
 title: "Swipe and Shoot Classic"
+platform: "phone"
 roles: "Game Design, 3D Modeling, Level Design"
 dates: "2014-2015"
 hasDemo: "false"

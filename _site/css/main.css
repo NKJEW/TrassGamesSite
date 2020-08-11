@@ -158,9 +158,15 @@ body {
     text-decoration: inherit;
     color: inherit; }
     .project-selector a .project-preview {
-      margin-bottom: 32px; }
-      .project-selector a .project-preview img {
+      margin-bottom: 32px;
+      position: relative; }
+      .project-selector a .project-preview .preview-image {
         width: 100%; }
+      .project-selector a .project-preview .platform-icon {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        width: 16%; }
 
 /* TITLE BAR */
 .title-bar {

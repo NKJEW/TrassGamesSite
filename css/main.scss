@@ -202,8 +202,16 @@ body {
     .project-preview {
       margin-bottom: 32px;
 
-      img {
+      position: relative;
+
+      .preview-image {
         width: 100%;
+      }
+      .platform-icon {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        width: 16%;
       }
     }
   }

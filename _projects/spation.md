@@ -2,6 +2,7 @@
 layout: project
 order: 6
 title: "Space Exploration Game"
+platform: "phone"
 roles: "Game Design, Programming, and Art"
 dates: "2016-2017"
 hasDemo: "true"
