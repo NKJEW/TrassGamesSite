@@ -88,11 +88,38 @@ body {
 
 /* Home page */
 .home-page {
-  .header-image {
-    img {
+  .header-slideshow {
+    background-color: black;
+    .slide {
+      display: none;
       width: 100%;
+      img {
+        width: 100%;
+      }
     }
   }
+  .slideshow-bottom {
+    background-color: black;
+    height: 2px;
+    width: 100%;
+  }
+}
+/* SLIDES ANIMATION */
+.slide {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 /* Project page */

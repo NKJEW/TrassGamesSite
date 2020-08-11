@@ -77,9 +77,35 @@ body {
     text-decoration: none; }
 
 /* Home page */
-.home-page .header-image img {
+.home-page .header-slideshow {
+  background-color: black; }
+  .home-page .header-slideshow .slide {
+    display: none;
+    width: 100%; }
+    .home-page .header-slideshow .slide img {
+      width: 100%; }
+.home-page .slideshow-bottom {
+  background-color: black;
+  height: 2px;
   width: 100%; }
 
+/* SLIDES ANIMATION */
+.slide {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
 /* Project page */
 .project-page {
   width: 90%;
