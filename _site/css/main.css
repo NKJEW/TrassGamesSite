@@ -122,6 +122,24 @@ body {
       white-space: nowrap;
       text-transform: uppercase; }
 
+.section-header-inverted {
+  height: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; }
+  .section-header-inverted .section-title-inverted {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .section-header-inverted .section-title-inverted a {
+      color: #FFF;
+      font-size: 28px;
+      margin: 0em 1em;
+      font-weight: 600;
+      white-space: nowrap;
+      text-transform: uppercase; }
+
 .project-summary-block {
   width: 100%;
   margin-bottom: 32px; }
@@ -200,10 +218,51 @@ body {
       margin-top: 0.5em;
       margin-left: 0.5em;
       margin-right: 0.5em; } }
+/* ABOUT SECTION */
+.about-section {
+  padding: 0px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .about-section .about-pannel {
+    width: 48.5%;
+    margin-bottom: 32px; }
+    .about-section .about-pannel img {
+      width: 100%; }
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 0px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #000; }
+  .contact-section .contact-pannel {
+    margin-bottom: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: margin-left;
+    align-items: center; }
+    .contact-section .contact-pannel img {
+      width: 32px;
+      height: 32px; }
+    .contact-section .contact-pannel a {
+      margin-left: 16px;
+      color: #FFF; }
+
 /* Responsive */
 @media only screen and (max-width: 620px) {
   .project-selector > a {
     width: 100%; }
 
   .gallery > .image-with-caption {
-    width: 100%; } }
+    width: 100%; }
+
+  .about-section > .about-pannel {
+    width: 100%; }
+
+  .contact-section {
+    flex-direction: column;
+    justify-content: flex-start; } }
