@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* VARIABLES */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -99,7 +100,7 @@ body {
 .project-page {
   width: 90%;
   margin: 0 auto;
-  max-width: 736px;
+  max-width: 1024px;
   margin-bottom: 16px;
   margin-top: 32px; }
   .project-page img.hero {
@@ -118,47 +119,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%; }
-
-/* SECTION HEADERS */
-.section-header {
-  height: 156px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .section-header .section-title {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .section-header .section-title a {
-      color: #000;
-      font-size: 28px;
-      margin: 0em 1em;
-      font-weight: 600;
-      white-space: nowrap;
-      text-transform: uppercase; }
-
-.section-header-inverted {
-  height: 156px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000; }
-  .section-header-inverted .section-title-inverted {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .section-header-inverted .section-title-inverted a {
-      color: #FFF;
-      font-size: 28px;
-      margin: 0em 1em;
-      font-weight: 600;
-      white-space: nowrap;
-      text-transform: uppercase; }
-
-.section-divider {
-  background-color: black;
-  height: 2px;
-  width: 100%; }
 
 .project-summary-block {
   width: 100%;
@@ -180,21 +140,18 @@ body {
   flex-wrap: wrap;
   justify-content: space-between; }
   .gallery .image-with-caption {
-    width: 45%; }
+    width: 48.5%; }
     .gallery .image-with-caption img {
       width: 100%; }
     .gallery .image-with-caption p.caption {
       margin-bottom: 32px; }
 
 .project-selector {
-  padding: 0px 32px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
   .project-selector a {
-    width: 48.5%;
-    text-decoration: inherit;
-    color: inherit; }
+    width: 48.5%; }
     .project-selector a .project-preview {
       margin-bottom: 32px;
       position: relative; }
@@ -202,15 +159,22 @@ body {
         width: 100%; }
       .project-selector a .project-preview .platform-icon {
         position: absolute;
-        bottom: 8px;
-        right: 8px;
-        width: 16%; }
+        bottom: 16px;
+        right: 16px;
+        width: 10%; }
+      .project-selector a .project-preview .title {
+        color: white;
+        font-size: 28px;
+        text-shadow: 0px 2px 2px black;
+        position: absolute;
+        bottom: 16px;
+        left: 16px; }
   .project-selector a:hover img {
     filter: brightness(80%); }
 
 /* TITLE BAR */
 .title-bar {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 600;
   padding: 32px 64px;
   display: flex;
@@ -233,18 +197,49 @@ body {
     .title-bar .nav-bar li {
       margin-left: 1em; }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .title-bar {
     padding: 16px 32px;
-    font-size: 24px;
+    font-size: 28px;
     flex-direction: column; }
     .title-bar .nav-bar > li {
       margin-top: 0.5em;
       margin-left: 0.5em;
       margin-right: 0.5em; } }
+/* SECTION HEADERS */
+.section-header {
+  height: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .section-header .section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .section-header .section-title a {
+      color: black;
+      font-size: 32px;
+      margin: 0em 1em;
+      font-weight: 600;
+      white-space: nowrap;
+      text-transform: uppercase; }
+
+.inverted {
+  background-color: #000; }
+  .inverted .section-title > a {
+    color: white; }
+
+.section-divider {
+  background-color: black;
+  height: 2px;
+  width: 100%; }
+
+/* SECTIONS */
+.section {
+  padding: 0px 32px; }
+
 /* ABOUT SECTION */
 .about-section {
-  padding: 0px 32px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
@@ -260,7 +255,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #000; }
+  background-color: black; }
   .contact-section .contact-pannel {
     margin-bottom: 32px;
     margin-left: 16px;
@@ -273,6 +268,7 @@ body {
       width: 32px;
       height: 32px; }
     .contact-section .contact-pannel a {
+      font-size: 18px;
       margin-left: 16px;
       color: #FFF; }
     .contact-section .contact-pannel a:hover {
