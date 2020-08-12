@@ -98,23 +98,11 @@ body {
       }
     }
   }
-  .slideshow-bottom {
-    background-color: black;
-    height: 2px;
-    width: 100%;
-  }
 }
 /* SLIDES ANIMATION */
 .slide {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
 
 @keyframes fade {
@@ -202,6 +190,11 @@ body {
       text-transform: uppercase;
     }
   }
+}
+.section-divider {
+  background-color: black;
+  height: 2px;
+  width: 100%;
 }
 
 
