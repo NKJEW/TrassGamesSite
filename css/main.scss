@@ -216,10 +216,11 @@ body {
         position: absolute;
         bottom: 16px;
         left: 16px;
+        right: 64px;
       }
       .date {
         color: white;
-        font-size: $medium-font-size;
+        font-size: $small-font-size;
         text-shadow: 0px 2px 2px black;
         position: absolute;
         bottom: 16px;
@@ -231,6 +232,14 @@ body {
     img {
       filter: brightness(80%);
     }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .selector > a > .selector-preview > .title {
+    font-size: $small-font-size;
+  }
+  .selector > a > .selector-preview > .date {
+    top: 16px;
   }
 }
 

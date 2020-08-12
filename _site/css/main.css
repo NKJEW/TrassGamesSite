@@ -168,10 +168,11 @@ body {
         text-shadow: 0px 2px 2px black;
         position: absolute;
         bottom: 16px;
-        left: 16px; }
+        left: 16px;
+        right: 64px; }
       .selector a .selector-preview .date {
         color: white;
-        font-size: 28px;
+        font-size: 18px;
         text-shadow: 0px 2px 2px black;
         position: absolute;
         bottom: 16px;
@@ -179,6 +180,12 @@ body {
   .selector a:hover img {
     filter: brightness(80%); }
 
+@media only screen and (max-width: 900px) {
+  .selector > a > .selector-preview > .title {
+    font-size: 18px; }
+
+  .selector > a > .selector-preview > .date {
+    top: 16px; } }
 /* TITLE BAR */
 .title-bar {
   font-size: 32px;
