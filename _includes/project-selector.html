@@ -1,12 +1,12 @@
-<div class="project-selector">
+<div class="selector">
 	{% assign sorted = (site.projects | sort: 'order') %}
 	{% for project in sorted %}
 		{% unless page.url == project.url %}
 		<a href="{{project.url}}" title="View project">
-			<div class="project-preview">
+			<div class="selector-preview">
         <img class="preview-image" src="/assets/{{ project.id }}_hero.png">
 				<img class="platform-icon" src="/assets/icon_{{project.platform}}.png">
-					<div class="title">{{project.title}}</div>
+				<div class="title">{{project.title}}</div>
 				<!-- <div class="project-summary-block"> -->
 					<!-- <div class="title-and-dates">
 						<h2 class="title">{{project.title}}</h2>
@@ -19,12 +19,3 @@
 		{% endunless %}
 	{% endfor %}
 </div>
-
-<!-- <div class="gallery">
-	{% for image in page.images %}
-	<div class="image-with-caption">
-		<img src="/assets/projects/{{ image.filename }}">  
-		<p class="caption">{{image.caption}}</p>
-	</div>
-	{% endfor %}
-</div> -->

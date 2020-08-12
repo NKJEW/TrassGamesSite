@@ -146,30 +146,37 @@ body {
     .gallery .image-with-caption p.caption {
       margin-bottom: 32px; }
 
-.project-selector {
+.selector {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-  .project-selector a {
+  .selector a {
     width: 48.5%; }
-    .project-selector a .project-preview {
+    .selector a .selector-preview {
       margin-bottom: 32px;
       position: relative; }
-      .project-selector a .project-preview .preview-image {
+      .selector a .selector-preview .preview-image {
         width: 100%; }
-      .project-selector a .project-preview .platform-icon {
+      .selector a .selector-preview .platform-icon {
         position: absolute;
         bottom: 16px;
         right: 16px;
         width: 10%; }
-      .project-selector a .project-preview .title {
+      .selector a .selector-preview .title {
         color: white;
         font-size: 28px;
         text-shadow: 0px 2px 2px black;
         position: absolute;
         bottom: 16px;
         left: 16px; }
-  .project-selector a:hover img {
+      .selector a .selector-preview .date {
+        color: white;
+        font-size: 28px;
+        text-shadow: 0px 2px 2px black;
+        position: absolute;
+        bottom: 16px;
+        right: 16px; }
+  .selector a:hover img {
     filter: brightness(80%); }
 
 /* TITLE BAR */

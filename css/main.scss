@@ -187,7 +187,7 @@ body {
   }
 }
 
-.project-selector {
+.selector {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -195,7 +195,7 @@ body {
   a {
     width: $standard-panel-width;
 
-    .project-preview {
+    .selector-preview {
       margin-bottom: $standard-margin;
 
       position: relative;
@@ -210,14 +210,20 @@ body {
         width: 10%;
       }
       .title {
-        // font-family: 'Chakra Petch', sans-serif;
         color: white;
         font-size: $medium-font-size;
         text-shadow: 0px 2px 2px black;
-        // text-transform: uppercase;
         position: absolute;
         bottom: 16px;
         left: 16px;
+      }
+      .date {
+        color: white;
+        font-size: $medium-font-size;
+        text-shadow: 0px 2px 2px black;
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
       }
     }
   }
