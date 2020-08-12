@@ -1,10 +1,9 @@
 ---
 layout: project
-order: 0
-title: "Overboard"
+order: 1
+title: "Overboard 1.0"
 platform: "vr"
-roles: "Game Design, 3D Modeling, Programming"
-dates: "2019+"
+dates: "2019"
 hasDemo: "false"
 youtubeID: oOae9Ea2LZI
 images:
