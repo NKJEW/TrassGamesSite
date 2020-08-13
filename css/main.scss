@@ -126,10 +126,8 @@ body {
   margin: 0 auto;
   max-width: 1024px;
   margin-bottom: 16px;
-  margin-top: $standard-margin;}
+  margin-top: $standard-margin;
 
-/* Project page */
-.project-page {  
   img.hero {
     width: 100%;
     margin-bottom: 16px;
@@ -150,7 +148,12 @@ body {
   }
 }
 
-.project-summary-block {
+/* Project page */
+.project-page {
+
+}
+
+.summary-block {
   width: 100%;
   margin-bottom: $standard-margin;
 
@@ -159,8 +162,10 @@ body {
     align-items: baseline;
     justify-content: space-between;
 
+    font-size: $medium-font-size;
+
     .title {
-      font-weight: 600;
+      //font-weight: 400;
     }
   }
 }

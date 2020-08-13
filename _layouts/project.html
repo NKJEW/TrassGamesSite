@@ -9,12 +9,11 @@ layout: default
       <img class="hero" src="/assets/{{ page.id }}_hero.png">
     {% endif %}
 
-    <div class="project-summary-block">
+    <div class="summary-block">
       <div class="title-and-dates">
         <h2 class="title">{{page.title}}</h2>
         <p class="dates">{{page.dates}}</p>
       </div>
-      <!-- <p>{{page.roles}}</p> -->
     </div>
   </div>
   {% include related-blog-section.html project=page.slug %}
