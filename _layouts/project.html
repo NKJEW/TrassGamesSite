@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<div class="project-page">
-    <div class="section">
+<div class="project-page narrow-page">
+  <div class="section">
     {% if page.youtubeID != "none" %}
       {% include youtube.html id=page.youtubeID %}
     {% else %}
@@ -16,7 +16,9 @@ layout: default
       </div>
       <!-- <p>{{page.roles}}</p> -->
     </div>
-
+  </div>
+  {% include related-blog-section.html project=page.slug %}
+  <div class="section">
     <div class="content">
       {{ content }}
     </div>

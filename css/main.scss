@@ -120,14 +120,16 @@ body {
   to {opacity: 1}
 }
 
-/* Project page */
-.project-page {
+/* FIXED WIDTH PAGES */
+.narrow-page {
   width:  90%;
   margin: 0 auto;
   max-width: 1024px;
   margin-bottom: 16px;
-  margin-top: $standard-margin;
+  margin-top: $standard-margin;}
 
+/* Project page */
+.project-page {  
   img.hero {
     width: 100%;
     margin-bottom: 16px;
