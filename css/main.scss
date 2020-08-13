@@ -3,7 +3,8 @@
 /* VARIABLES */
 $header-font-size: 32px;
 $medium-font-size: 28px;
-$small-font-size: 18px;
+$small-font-size: 20px;
+$paragraph-font-size: 18px;
 
 $standard-margin: 32px;
 $standard-panel-width: 48.5%;
@@ -60,18 +61,19 @@ border-spacing: 0;
 }
 
 h1 {
-  font-size: 125%;
+  font-size: $small-font-size;
   font-weight: 400;
   margin-bottom: 8px;
 }
 
 h2 {
+  font-size: $medium-font-size;
   font-weight: 400;
   margin-bottom: 8px;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: $header-font-size;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
@@ -84,6 +86,7 @@ hr {
 }
 
 p {
+  font-size: $paragraph-font-size;
   line-height: 1.5;
 }
 
@@ -148,11 +151,6 @@ body {
   }
 }
 
-/* Project page */
-.project-page {
-
-}
-
 .summary-block {
   width: 100%;
   margin-bottom: $standard-margin;
@@ -163,10 +161,6 @@ body {
     justify-content: space-between;
 
     font-size: $medium-font-size;
-
-    .title {
-      //font-weight: 400;
-    }
   }
 }
 

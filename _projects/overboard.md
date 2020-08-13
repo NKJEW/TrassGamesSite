@@ -21,9 +21,9 @@ images:
     caption: ""
 ---
 
-## What I Learned
+# What I Learned
 Designing interactions for VR, low poly modeling and animation in Blender, environment design, procedural generation, coding complex AI behavior, and releasing a game on Steam.
 
-## Description
+# Description
 
 Overboard is a ridiculous VR game about fighting bloodthirsty and increasingly deadly sharks using makeshift weapons. Elevate the battle from the open ocean to the skies, and even into space! The sharks will stop at nothing to devour a tasty human. [Get it on Steam](https://store.steampowered.com/app/1144080/Overboard/)
