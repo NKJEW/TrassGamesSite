@@ -88,6 +88,7 @@ hr {
 p {
   font-size: $paragraph-font-size;
   line-height: 1.5;
+  margin-bottom: $standard-margin;
 }
 
 body {
@@ -166,10 +167,6 @@ body {
 
 .content {
   margin-bottom: $standard-margin;
-
-  p {
-    margin-bottom: $standard-margin;
-  }
 }
 
 .gallery {

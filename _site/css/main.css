@@ -70,7 +70,8 @@ hr {
 
 p {
   font-size: 18px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-bottom: 32px; }
 
 body {
   font-family: 'Chakra Petch', sans-serif;
@@ -133,8 +134,6 @@ body {
 
 .content {
   margin-bottom: 32px; }
-  .content p {
-    margin-bottom: 32px; }
 
 .gallery {
   display: flex;
