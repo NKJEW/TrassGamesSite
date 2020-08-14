@@ -16,20 +16,11 @@ layout: default
       </div>
     </div>
   </div>
-  {% include related-blog-section.html project=page.slug %}
   <div class="section">
     <div class="content">
       {{ content }}
     </div>
-
-    <div class="gallery">
-      {% for image in page.images %}
-      <div class="image-with-caption">
-        <img src="/assets/projects/{{ image.filename }}">  
-        <p class="caption">{{image.caption}}</p>
-      </div>
-      {% endfor %}
-    </div>
   </div>
+  {% include related-blog-section.html project=page.slug %}
   {% include games-section.html %}
 </div>
