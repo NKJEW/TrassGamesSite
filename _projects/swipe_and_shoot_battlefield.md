@@ -16,3 +16,8 @@ images:
 - filename: "swipe_and_shoot_battlefield_building.gif"
   caption: "The player can even place buildings to alter the battlefield."
 ---
+We have always joked about recreating our iOS game Swipe and Shoot in VR. When bored one day, we decided to do it. It became obvious that, unlike the original game, flinging oneself at enemies would be far too nauseating in VR. As such we chose to make the player a god of sorts with the power to overlook and influence the battlefield as if were a toy.
+
+After the initial long work session, we were delighted when revisiting the old endless levels in VR, but quickly longed for larger scale battles. This inspired our tangent into procedurally generated terrain alongside a complete rework to AI.
+
+We quickly fell down a rabbit hole of optimizing the new system with variable level of detail levels and numerous AI refactors, stuff maybe too intensive for this experiment. However, we hope that our efforts allow for massive battles on the Oculus Quest.
