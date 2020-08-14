@@ -8,7 +8,7 @@ hasDemo: "false"
 youtubeID: "F-JJULVNMI8"
 images:
 ---
-After successfully releasing Overboard to Steam and making it through the first half of our college freshman year, we decided that we wanted to expand Overboard in every sense of the word. Equipped with new skills and unprecedented motivation, we began work on what would eventually become Overboard 2.0.
+After successfully releasing Overboard to Steam and making it through the first half of our college freshman year, we decided that we wanted to expand it, in every sense of the word. Equipped with new skills and unprecedented motivation, we began work on what would eventually become Overboard 2.0.
 
 Overboard 2.0 features a full campaign to justify the ridiculous game concept, and greatly improved visuals to lean as far into the game's cartoony aesthetic as possible. The same explosive shark-filled carnage remains, but with cel-shaded graphics and a fancy new water system, Overboard 2.0 promises exciting new features in a much more stylistically recognizable package.
 
