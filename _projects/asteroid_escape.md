@@ -7,13 +7,13 @@ dates: "2018-2019"
 youtubeID: "1Mho3Sbd74Q"
 images:
 - filename: "asteroid_escape_swing.gif"
-  caption: "Swing or climb on asteroids..."
+  caption: "The player can swing or climb on asteroids."
 - filename: "asteroid_escape_run.gif"
-  caption: "and escape the deadly space worm!"
+  caption: "A deadly alien worm is in hot pursuit, so you better move fast!"
 - filename: "asteroid_escape_money.gif"
-  caption: "Or, use bombs to face it head on!"
+  caption: "The player can use bombs to fight the worm."
 - filename: "asteroid_escape_victory.gif"
-  caption: "And celebrate after a glorious victory!"
+  caption: "Celebrate after a glorious victory!"
 ---
 About halfway through our senior year in high school, Jack thought it was high time we experiment with something other than mobile games. So on one fateful day, he took out his old VR headset, sat down, and pumped out what would eventually mark the beginning of our adventures in virtual reality: Asteroid Escape.
 
