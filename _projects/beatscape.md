@@ -7,6 +7,14 @@ dates: "2020+"
 hasDemo: "false"
 youtubeID:
 images:
+- filename: "beatscape_path.gif"
+  caption: "The player follows a path of notes that they can slice through, occasionally with enemy encounters."
+- filename: "beatscape_slice.gif"
+  caption: "An early prototype where the player can slash or throw their sword in time with the beat."
+- filename: "beatscape_bow.gif"
+  caption: "A prototype version of the bow weapon, our first weapon requiring two hands to wield."
+- filename: "beatscape_morph.gif"
+  caption: "A demo featuring the morphing weapon system, with fluid particle-based transitions."
 ---
 Partway into our quarantined summer, we decided to try experimenting with some VR projects that were a complete departure from our previous games. In particular, we were intrigued by the popularity of rhythm games in the VR market, and since Overboard had featured a robust dynamic music system, it seemed like a reasonable direction. So we conceived a new game idea, which would combine the satisfying and intuitive flow of a rhythm game with various forms of combat.
 
