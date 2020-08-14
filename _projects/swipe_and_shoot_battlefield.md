@@ -5,7 +5,7 @@ title: "Swipe and Shoot Battlefield"
 platform: "vr"
 dates: "2020+"
 hasDemo: "false"
-youtubeID:
+youtubeID: pPbVTuDHi4I
 images:
 - filename: "swipe_and_shoot_battlefield_battle.gif"
   caption: "The player can turn the tides of battle by possessing a soldier..."
