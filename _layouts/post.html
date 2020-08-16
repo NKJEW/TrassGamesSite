@@ -6,9 +6,10 @@ layout: default
     <img class="hero" src="/assets/{{ page.id }}_hero.png">
     <div class="summary-block">
       <div class="title-and-dates">
-        <h2 class="title">{{page.title}}</h2>
+        <h2 class="title">{{page.long-title}}</h2>
         <h1 class="dates">{{page.date | date_to_string }}</h1>
       </div>
+      <p class="by-line">By {{page.author}}</p>
     </div>
   </div>
   <div class="section">
