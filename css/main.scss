@@ -5,6 +5,7 @@ $header-font-size: 32px;
 $medium-font-size: 28px;
 $small-font-size: 20px;
 $paragraph-font-size: 18px;
+$code-font-size: 14px;
 
 $standard-margin: 32px;
 $standard-panel-width: 48.5%;
@@ -400,4 +401,16 @@ body {
       flex-direction: column;
       justify-content: flex-start;
     }
+}
+
+/* CODE SNIPPETS */
+.highlighter-rouge {
+  margin-bottom: $standard-margin;
+  background-color: #222;
+  padding: 8px;
+  color: white;
+}
+code {
+  font-family: 'Roboto Mono', monospace;
+  font-size: $code-font-size;
 }
