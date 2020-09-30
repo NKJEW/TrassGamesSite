@@ -18,7 +18,7 @@ images:
 
 Indivisible is our entry into the first Oculus Start Game Jam which lasted for 10 days. This years theme was "Overcoming Separation and Fostering Connection".
 
-Our game is about red and blue coming together through compromise to solve our nations problems. Each task represents a current issue in America. However, we only reveal it after the players complete the task.
+Indivisible is a two player VR game about completing tasks while sharing one body. Players must compromise as their shared physical arms exist halfway between their own and their partner's. While on the surface tasks seem inconsequential, they represent our country's problems which our divided nation must unite to solve.
 
 {% include gallery.html %}
 
