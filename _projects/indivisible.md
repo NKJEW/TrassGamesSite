@@ -1,7 +1,7 @@
 ---
 layout: project
 order: 0
-title: "Indivisible - Oculus Start Game Jam"
+title: "Indivisible - Oculus Start Game Jam Winner"
 platform: "vr"
 dates: "2020"
 youtubeID: "hghDNUjfeR0"
@@ -9,7 +9,7 @@ images:
 - filename: "indivisible_task1.png"
   caption: "The Task 1 is about redistributing boxes..."
 - filename: "indivisible_task1_reveal.png"
-  caption: "...representing the poor distribution of wealth in the US."
+  caption: "...representing the unjust distribution of wealth in the US."
 - filename: "indivisible_task2.png"
   caption: "Task 2 requires spreading out balls."
 - filename: "indivisible_task3.png"
@@ -25,7 +25,7 @@ Indivisible is a two player VR game about completing tasks while sharing one bod
 ## Development
 After some initial brainstorming, we knew we wanted two players sharing one body. Though we were scared of making a multiplayer VR game in such a short time, we belived the payoff would be worth the extra challenge.
 
-The first couple days were all about getting arms and interaction working across a network. However, as we got closer and closer to a functional experience we had to start thinking about what the players were going to do together. In our initial testing we had two different colored arms: red and blue. This got us thinking about the political divides in the US and we decided to stretch the game to be about brining a country together as one, not just two people.
+The first couple days were all about getting arms and interaction working across a network. However, as we got closer and closer to a functional experience we had to start thinking about what the players were going to do together. In our initial testing we had two different colored arms: red and blue. This got us thinking about the political divides in the US and we decided to stretch the game to be about bringing a country together as one, not just two people.
 
 We are really happy how the game turned out and hope our message will be recieved by our audience. It is only through compromise that we can unite our country again.
 
