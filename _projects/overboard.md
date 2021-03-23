@@ -1,6 +1,6 @@
 ---
 layout: project
-order: 1
+order: 2
 title: "Overboard 1.0"
 platform: "vr"
 dates: "2019"
