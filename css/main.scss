@@ -133,6 +133,14 @@ body {
   margin-bottom: 16px;
   margin-top: $standard-margin;
 
+  li {
+    list-style-type: circle;
+    font-size: $paragraph-font-size;
+    line-height: 1.5;
+    margin-left: $standard-margin;
+    // margin-bottom: $standard-margin;
+  }
+
   img.hero {
     width: 100%;
     margin-bottom: 16px;

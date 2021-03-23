@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-15T16:40:22-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jack Southard, hhh</title><entry><title type="html">Procedual Terrain</title><link href="http://localhost:4000/blog/2020/08/12/terrain" rel="alternate" type="text/html" title="Procedual Terrain" /><published>2020-08-12T00:00:00-07:00</published><updated>2020-08-12T00:00:00-07:00</updated><id>http://localhost:4000/blog/2020/08/12/terrain</id><content type="html" xml:base="http://localhost:4000/blog/2020/08/12/terrain">&lt;div class=&quot;gallery&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-23T15:09:57-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jack Southard, hhh</title><entry><title type="html">Procedual Terrain</title><link href="http://localhost:4000/blog/2020/08/12/terrain" rel="alternate" type="text/html" title="Procedual Terrain" /><published>2020-08-12T00:00:00-07:00</published><updated>2020-08-12T00:00:00-07:00</updated><id>http://localhost:4000/blog/2020/08/12/terrain</id><content type="html" xml:base="http://localhost:4000/blog/2020/08/12/terrain">&lt;div class=&quot;gallery&quot;&gt;
 	
 	&lt;div class=&quot;image-with-caption&quot;&gt;
 		&lt;img src=&quot;/assets/blog/2020/08/12/landscape0.png&quot; /&gt; 
@@ -74,7 +74,8 @@
 
 &lt;p&gt;The general shape of the mountains and hills is based off of the large scale hill mask. The details are added on top of that to break up the uniformity. A new heightmap is created by looping through each pixel and deriving a new value with the math function:&lt;/p&gt;
 
-&lt;p&gt;newValue = (sourceValue * (1 - additionPower) + additionValue * additionPower) * sourceValue;&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;newValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sourceValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;additionPower&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;additionValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;additionPower&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sourceValue&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;where the source is the hill mask and the addition is the detail heightmap. This function averages the two with a variable power, perfect for adding details without overpowering the hill mask.&lt;/p&gt;
 
@@ -101,23 +102,27 @@
 
 &lt;p&gt;Admittedly it took me a while to figure out the best way to combine these two heightmaps. However, I eventaully settled on simply multiplying them together:&lt;/p&gt;
 
-&lt;p&gt;newValue = sourceValue * additionValue&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;newValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sourceValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;additionValue&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;I then combined this new border hills heightmap with the previously generated hills heightmap with simple max function:&lt;/p&gt;
 
-&lt;p&gt;newValue = Max(sourceValue, additionValue)&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;newValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sourceValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;additionValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h1 id=&quot;create-terraces&quot;&gt;Create Terraces&lt;/h1&gt;
 &lt;p&gt;I knew our soldiers would have trouble climbing mountains, but still wanted them to be able to navigate and fight on them. Luckily, deserts commonly have plateaus so it made sense to terrace the terrain.&lt;/p&gt;
 
 &lt;p&gt;To add terraces we need to flatten a range of height values. This requires a bit of math as simply rounding height values to the nearest terrace height would look completely unnatural. However, I created the following function to do it:&lt;/p&gt;
 
-&lt;!-- HTML generated using hilite.me --&gt;
-&lt;div style=&quot;background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em;padding:.2em .6em;margin-bottom:32px;font-size:$paragraph-font-size&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;&lt;span style=&quot;color: #000080; font-weight: bold&quot;&gt;if&lt;/span&gt; (sourceVal &amp;gt; terraceHeight) {
-    newValue = (soureVal - terracePull) / (&lt;span style=&quot;color: #0000FF&quot;&gt;1f&lt;/span&gt; - terracePull)
-    &lt;span style=&quot;color: #000080; font-weight: bold&quot;&gt;if&lt;/span&gt; (newValue &amp;lt; terraceHeight) newValue = terraceHeight
-}
-&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sourceVal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;terraceHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;newValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soureVal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;terracePull&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;terracePull&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;terraceHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;terraceHeight&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;The function recieves a height to flatten at and a pull value which is the amount of terrain above it that should be pulled down and flattened. In order to maintain the same original height for the terrain after it gets lowered, we have to scale up the lowered terrain vertically.&lt;/p&gt;
 
@@ -146,4 +151,6 @@
 &lt;/video&gt;
 
 &lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;While there are certainly improvements I can make to the terrain generation, it serves its purpose well. Though I only demonstrated how layering noise can be used to create stylized desert enviornments, the techniques shown above can be used anywhere with a little tweaking and imagination.&lt;/p&gt;</content><author><name>Jack Southard</name></author><summary type="html">       </summary></entry></feed>
+&lt;p&gt;While there are certainly improvements I can make to the terrain generation, it serves its purpose well. Though I only demonstrated how layering noise can be used to create stylized desert enviornments, the techniques shown above can be used anywhere with a little tweaking and imagination.&lt;/p&gt;
+
+&lt;p&gt;To explore the code or use it in your own project, &lt;a href=&quot;https://github.com/jacksouthard/LayeredHeightmapTerrain&quot;&gt;checkout the GitHub repository.&lt;/a&gt;&lt;/p&gt;</content><author><name>Jack Southard</name></author><summary type="html">       </summary></entry></feed>

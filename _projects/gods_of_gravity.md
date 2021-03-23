@@ -5,7 +5,7 @@ title: "Gods of Gravity"
 platform: "vr"
 dates: "2021"
 hasDemo: "false"
-youtubeID:
+youtubeID: "none"
 images:
   - filename: "swipe_and_shoot_1.png"
     caption: "I love to experiment with weird game mechanics so we quickly adopted character movement based solely on diving and rolling."
@@ -16,15 +16,13 @@ images:
   - filename: "swipe_and_shoot_4.png"
     caption: "Unlike the original game, we wanted to include a compelling story taking place over five levels."
 ---
-Gods of Gravity is a multiplayer VR game where you play god and compete against your friends for control of a solar system in an epic last-man-standing battle.
+Compete against friends in an epic showdown of celestial gods. Use your gravity power to fling your spaceships into distant orbits, or open wormholes to teleport them across the solar system. Capture planets, moons, and even the sun to boost your production. Then send a massive fleet to conquer friend’s home planets. Last god standing wins.
 
-Command gravity to capture and throw your fleet in formation. Create wormholes to teleport your ships for a sneak attack!
-Take over planets and moons to boost your production. Take over the sun for even more power.
-Spread your fleet over the system to maximize your territory. Or mount an attack on an enemy home base!
-Fling ships between orbits without tedious real rocket science.
-Enjoy the fun, strategic elements of the RTS genre without the overwhelming complexity.
-Three distinct ship classes makes combat easy to learn, while still rewarding proper strategic planning.
-Various different maps support anywhere from 2-4 players.
-Eliminated players automatically join another team so everyone stays in the action.
+# Key Features:
+* Various different maps support anywhere from 2-4 players.
+* Fling ships into distant orbits without tedious rocket science
+* The fun, strategic elements of the RTS genre without the overwhelming complexity.
+* Three distinct ship classes makes combat easy to learn, while still rewarding proper strategic planning.
+* Eliminated players automatically join another team so everyone stays in the action.
 
 <!-- {% include gallery.html %} -->
