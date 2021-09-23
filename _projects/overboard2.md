@@ -1,7 +1,8 @@
 ---
 layout: project
-order: 1
+order: 3
 title: "Overboard 2.0"
+hook: "Fight climate change and sharks at the same time"
 platform: "vr"
 dates: "2020"
 hasDemo: "false"
@@ -14,6 +15,6 @@ Overboard 2.0 features a full campaign to justify the ridiculous game concept, a
 
 For the rest of the school year and going well into the following summer, the Trass Games team would expand to accommodate the game's massive scope. New assets like the research ship, the deep sea wreckage, and the underwater cliff brought on additional guidance from our new artist Gabriel, and the more involved dynamic music system encouraged Nathan to expand his compositional skills. Jack worked tirelessly on new shaders for set pieces like the abyss and the mysterious alien forcefield, and Jeff gave the team a more professional edge during team meetings and project management.
 
-{% include gallery.html %}
+{% include project-gallery.html %}
 
 Later into the summer we realized we wanted to branch out and explore other projects in VR, putting Overboard on pause. However, even if the project remains unfinished, we are extremely proud of how far it came and all we learned through its development.

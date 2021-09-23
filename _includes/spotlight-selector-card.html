@@ -1,0 +1,15 @@
+<a href="{{ include.url }}" title="View card">
+	<div class="selector-preview">
+		<img class="preview-image" src="{{ include.image_path }}">
+		{% include set-gallery.html subpath=include.subpath set=include.image_set count=2 hide_captions="true" %}
+		<div class="selector-title-bar">
+			<h1 class="title">{{ include.title }}
+				<img class="button-arrow" src="/assets/buttonArrow.png">
+			</h1>
+			<!-- {% if include.subtitle %}
+				<div class="subtitle">{{ include.subtitle }}</div>
+			{% endif %} -->
+			<p class="description">{{ include.description }}</p>
+		</div>
+	</div>
+</a>

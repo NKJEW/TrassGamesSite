@@ -1,7 +1,8 @@
 ---
 layout: project
-order: 2
+order: 10
 title: "Beatscape"
+hook: "Slice and shoot to an ever evolving rhythm"
 platform: "vr"
 dates: "2020"
 hasDemo: "false"
@@ -22,6 +23,6 @@ This is Beatscape, a rhythm-based pseudo-roguelike where you use all manner of e
 
 As a whole, this game is designed to be abstract, simple, and straightforward. The art style emphasizes solid colors with clearly defined shapes, and the weapons can be morphed between using basic, intuitive gestures.
 
-{% include gallery.html %}
+{% include project-gallery.html %}
 
 As a highly experimental project, we have pivoted frequently, trying many different weapons and multiple styles of progression. The concept itself is still in the very early stages of development. We have already learned a lot and can't wait to explore this project more.

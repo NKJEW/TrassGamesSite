@@ -1,0 +1,1 @@
+Video games are fun, shared experiences with the power to unite people, despite barriers like distance, class, and language. They’ve always fostered connections in our lives and we’re honored to give back by creating games for others to enjoy together.

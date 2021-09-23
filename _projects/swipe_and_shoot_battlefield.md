@@ -1,7 +1,8 @@
 ---
 layout: project
-order: 3
+order: 6
 title: "Swipe and Shoot Battlefield"
+hook: "Play god and toss soldiers around or lead a platoon into battle"
 platform: "vr"
 dates: "2020"
 hasDemo: "false"
@@ -22,6 +23,6 @@ After the initial long work session, we were delighted when revisiting the old e
 
 We quickly fell down a rabbit hole of optimizing the new system with variable level of detail levels and numerous AI refactors, stuff maybe too intensive for this experiment. However, we hope that our efforts allow for massive battles on the Oculus Quest.
 
-{% include gallery.html %}
+{% include project-gallery.html %}
 
 We are not quite sure were we will go with this project. Nonetheless it was a fun experiment and we learned a lot of new techniques in regards to procedural terrain and AI.

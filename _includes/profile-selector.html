@@ -1,0 +1,8 @@
+<div class="selector">
+	<div class="default-selector">
+		{% for profile in site.profiles %}
+			{% capture new_url %}/assets/{{ profile.id }}_headshot.png{% endcapture %}
+			{% include selector-card.html url=profile.portfolio image_path=new_url title=profile.name subtitle=profile.roles %}
+		{% endfor %}
+	</div>
+</div>

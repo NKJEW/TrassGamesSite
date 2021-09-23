@@ -1,0 +1,14 @@
+{% assign shownCount = 0 %}
+<div class="gallery">
+	{% for image in include.set %}
+		{% unless include.count and shownCount >= include.count %}
+			{% assign shownCount = shownCount|plus:1 %}
+			<div class="image-with-caption">
+				<img src="/assets/{{ include.subpath }}{{ image.filename }}"> 
+				{% if image.caption and include.hide_captions != "true" %}
+					<p class="caption">{{ image.caption }}</p>
+				{% endif %}
+			</div>
+		{% endunless %}
+	{% endfor %}
+</div>

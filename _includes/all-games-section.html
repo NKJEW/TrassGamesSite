@@ -1,0 +1,16 @@
+<div class="section">
+	<!-- {% include section-header.html title="All Games" %} -->
+	<div class="section-contents">
+		<div class="selector">
+			<div class="large-selector">
+				{% for project in site.projects %}
+					{% if include.spotlight_slug == project.slug %}
+						{% capture new_url %}/assets/{{ project.id }}_hero.png{% endcapture %}
+						{% include spotlight-selector-card.html subpath="projects/" url=project.url image_path=new_url title=project.title description=project.description image_set=project.images %}
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+		{% include project-selector.html spotlight_slug=include.spotlight_slug %}
+	</div>
+</div>

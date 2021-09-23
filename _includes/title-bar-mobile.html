@@ -1,0 +1,33 @@
+<div class="nav-bar-mobile">
+	<div class="nav-bar-top">
+		<img class="hamburger" src="/assets/hamburger.png" onclick="toggleGeneral()">
+		<a class="nav-bar-icon" href="/">
+			<img src="/assets/logo.png">
+		</a>
+	</div>
+	<ul class="nav-bar-general-dropdown">
+		{% include nav-bar-items.html %}
+	</ul>
+</div>
+
+<script>
+	let generalOpen = true;
+
+	function toggleGeneral() {
+		if (generalOpen) {
+			closeGeneral();
+		} else {
+			expandGeneral();
+		}
+	}
+	function expandGeneral() {
+		$(".nav-bar-general-dropdown").css("display", "");
+		generalOpen = true;
+	}
+	function closeGeneral() {
+		$(".nav-bar-general-dropdown").css("display", "none");
+		generalOpen = false;
+	}
+
+	closeGeneral();
+</script>

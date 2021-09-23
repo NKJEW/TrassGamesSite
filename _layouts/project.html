@@ -1,26 +1,35 @@
 ---
 layout: default
 ---
-<div class="project-page narrow-page">
-  <div class="section">
-    {% if page.youtubeID != "none" %}
-      {% include youtube.html id=page.youtubeID %}
-    {% else %}
-      <img class="hero" src="/assets/{{ page.id }}_hero.png">
-    {% endif %}
-
-    <div class="summary-block">
-      <div class="title-and-dates">
-        <h2 class="title">{{page.title}}</h2>
-        <h1 class="dates">{{page.dates}}</h1>
+<div class="subpage">
+	<div class="subpage-contents">
+		<div class="wall-paper-left"></div>
+		<div class="narrow-page">
+      <div class="section">
+        <div class="section-contents">
+          {% if page.youtubeID %}
+            {% include youtube.html id=page.youtubeID %}
+          {% else %}
+            <img class="hero" src="/assets/{{ page.id }}_hero.png">
+          {% endif %}
+          <div class="summary-block">
+            <div class="title-and-dates">
+              <h1 class="title">{{page.title}}</h1>
+              <h2 class="dates">{{page.dates}}</h2>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="content">
-      {{ content }}
-    </div>
-  </div>
-  {% include related-blog-section.html project=page.slug %}
-  {% include games-section.html %}
+      <div class="section">
+        <div class="section-contents">
+          <div class="markdown-content">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+      {% include related-blog-section.html project=page.slug %}
+			{% include other-games-section.html %}
+		</div>
+		<div class="wall-paper-right"></div>
+	</div>
 </div>

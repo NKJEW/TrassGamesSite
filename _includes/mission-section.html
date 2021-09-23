@@ -1,0 +1,7 @@
+<div class="section">
+	{% include section-header.html title="Our Mission" %}
+	<div class="section-contents">
+		{% capture my_include %}{% include about-mission.md %}{% endcapture %}
+		{{ my_include | markdownify }}
+	</div>
+</div>

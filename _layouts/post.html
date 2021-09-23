@@ -1,19 +1,31 @@
 ---
 layout: default
 ---
-<div class="narrow-page">
-  <div class="section">
-    <img class="hero" src="/assets/{{ page.id }}_hero.png">
-    <div class="summary-block">
-      <div class="title-and-dates">
-        <h2 class="title">{{page.long-title}}</h2>
-        <h1 class="dates">{{page.date | date_to_string }}</h1>
+<div class="subpage">
+	<div class="subpage-contents">
+		<div class="wall-paper-left"></div>
+		<div class="narrow-page">
+      <div class="section">
+        <div class="section-contents">
+          <img class="hero" src="/assets/{{ page.id }}_hero.png">
+          <div class="summary-block">
+            <div class="title-and-dates">
+              <h2 class="title">{{page.long-title}}</h2>
+              <h2 class="dates">{{page.date | date_to_string }}</h2>
+            </div>
+            <h3 class="by-line">By {{page.author}}</h3>
+          </div>
+        </div>
       </div>
-      <p class="by-line">By {{page.author}}</p>
-    </div>
-  </div>
-  <div class="section">
-    {{ content }}
-  </div>
-  {% include related-game-section.html project=page.project %}
+      <div class="section">
+        <div class="section-contents">
+          <div class="markdown-content">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+      {% include related-game-section.html project=page.project %}
+		</div>
+		<div class="wall-paper-right"></div>
+	</div>
 </div>

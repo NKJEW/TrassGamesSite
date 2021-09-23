@@ -1,7 +1,9 @@
 ---
 layout: project
-order: 0
-title: "Indivisible - Oculus Start Game Jam Winner"
+order: 1
+title: "Indivisible"
+hook: "Oculus Start Game Jam Winner"
+description: "Completing tasks with a friend while sharing a body. Compromise as your shared physical arms exist halfway between your own and your partner's. While on the surface tasks seem inconsequential, they represent our country's problems which our divided nation must unite to solve."
 platform: "vr"
 dates: "2020"
 youtubeID: "hghDNUjfeR0"
@@ -20,7 +22,7 @@ Indivisible is our entry into the first Oculus Start Game Jam which lasted for 1
 
 Indivisible is a two player VR game about completing tasks while sharing one body. Players must compromise as their shared physical arms exist halfway between their own and their partner's. While on the surface tasks seem inconsequential, they represent our country's problems which our divided nation must unite to solve.
 
-{% include gallery.html %}
+{% include project-gallery.html %}
 
 ## Development
 After some initial brainstorming, we knew we wanted two players sharing one body. Though we were scared of making a multiplayer VR game in such a short time, we belived the payoff would be worth the extra challenge.
@@ -28,4 +30,3 @@ After some initial brainstorming, we knew we wanted two players sharing one body
 The first couple days were all about getting arms and interaction working across a network. However, as we got closer and closer to a functional experience we had to start thinking about what the players were going to do together. In our initial testing we had two different colored arms: red and blue. This got us thinking about the political divides in the US and we decided to stretch the game to be about bringing a country together as one, not just two people.
 
 We are really happy how the game turned out and hope our message will be recieved by our audience. It is only through compromise that we can unite our country again.
-

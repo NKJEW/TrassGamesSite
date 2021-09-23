@@ -1,6 +1,13 @@
-name: Jack Southard, hhh
+name: Trass Games
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 collections:
   projects:
     output: true
+    sort_by: order
+  profiles:
+    output: false
+    sort_by: order
+  slides:
+    output: false
+    sort_by: order

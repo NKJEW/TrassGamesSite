@@ -1,7 +1,7 @@
 <div class="selector">
-	<div class="default-selector">
+	<div class="large-selector">
 		{% for project in site.projects %}
-			{% if page.url != project.url and project.slug != include.spotlight_slug %}
+			{% if include.project_slug == project.slug %}
 				{% capture new_path %}/assets/{{ project.id }}_hero.png{% endcapture %}
 				{% include selector-card.html url=project.url image_path=new_path title=project.title subtitle=project.hook %}
 			{% endif %}
