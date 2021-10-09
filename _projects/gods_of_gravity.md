@@ -6,7 +6,7 @@ hook: "Compete against friends in an epic showdown of celestial gods"
 platform: "vr"
 dates: "2021"
 hasDemo: "false"
-youtubeID: "wkrdpp6KdfQ"
+youtubeID: "eGUfLopBv5o"
 images:
   - filename: "swipe_and_shoot_1.png"
     caption: "I love to experiment with weird game mechanics so we quickly adopted character movement based solely on diving and rolling."
