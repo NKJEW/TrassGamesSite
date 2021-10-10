@@ -1,15 +1,19 @@
 ---
 layout: default
 ---
-<div class="narrow-page">
-  <div class="section">
-    <div class="summary-block">
-      <div class="title-and-dates">
-        <h2 class="title">{{page.title}}</h2>
+<div class="subpage">
+	<div class="subpage-contents">
+		<div class="wall-paper-left"></div>
+		<div class="narrow-page">
+      <div class="section">
+        {% include section-header.html title=page.title %}
+        <div class="section-contents">
+          <div class="markdown-content">
+            {{ content }}
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="section">
-    {{ content }}
-  </div>
+		</div>
+		<div class="wall-paper-right"></div>
+	</div>
 </div>
