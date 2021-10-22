@@ -8,22 +8,23 @@ dates: "2021"
 hasDemo: "false"
 youtubeID: "eGUfLopBv5o"
 images:
-  - filename: "swipe_and_shoot_1.png"
-    caption: "I love to experiment with weird game mechanics so we quickly adopted character movement based solely on diving and rolling."
-  - filename: "swipe_and_shoot_2.png"
-    caption: "Tapping to shoot was lame in the old game so we added auto shooting to emphasize swiping."
-  - filename: "swipe_and_shoot_3.png"
-    caption: "We had fun building interesting vehicles including ATVs, Jeeps, and even a chopper."
-  - filename: "swipe_and_shoot_4.png"
-    caption: "Unlike the original game, we wanted to include a compelling story taking place over five levels."
+  - filename: "gods_of_gravity_1.png"
+  - filename: "gods_of_gravity_2.png"
+  - filename: "gods_of_gravity_4.png"
+  - filename: "gods_of_gravity_5.png"
 ---
-Compete against friends in an epic showdown of celestial gods. Use your gravity power to fling your spaceships into distant orbits, or open wormholes to teleport them across the solar system. Capture planets, moons, and even the sun to boost your production. Then send a massive fleet to conquer friend’s home planets. Last god standing wins.
+Gods of Gravity is a multiplayer arcade-style RTS game where you compete against friends in an epic showdown of celestial gods. Scoop up just the right ships (like Shield and Rocket) and fling them to capture a nearby planet, or open wormholes to teleport them across the solar system. Hold planets and moons to boost your production. And if you dare, capture the sun for the ultimate buff. Then send a massive fleet to conquer friends’ home planets. Last god standing wins.
 
-### Key Features:
-* Various different maps support anywhere from 2-4 players.
-* Fling ships into distant orbits without tedious rocket science
-* The fun, strategic elements of the RTS genre without the overwhelming complexity.
-* Three distinct ship classes makes combat easy to learn, while still rewarding proper strategic planning.
-* Eliminated players automatically join another team so everyone stays in the action.
+### 2 to 5 Player Multiplayer:
+* Eliminate your friends to take control of the solar system
+* Defeated players automatically join another team so everyone stays in the action
+* Unlock different Gods with unique powers, but be careful as friends who defeat you will gain them as well
+* Add intelligent bots to make the battle even crazier
 
-<!-- {% include project-gallery.html %} -->
+### Single Player Campaign (BETA):
+* Take over the galaxy, one solar system at a time
+* Absorb defeated enemies to unlock new Gods with game-changing powers
+* Hone your skills on a variety of unique scenarios
+
+
+{% include project-gallery.html %}
