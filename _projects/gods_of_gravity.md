@@ -9,9 +9,13 @@ hasDemo: "false"
 youtubeID: "eGUfLopBv5o"
 images:
   - filename: "gods_of_gravity_1.png"
+    caption: "Use gravity to attract and throw ships..."
   - filename: "gods_of_gravity_2.png"
+    caption: "...or create wormholes to travel great distances"
   - filename: "gods_of_gravity_4.png"
+    caption: "Rally at the sun for great advantage"
   - filename: "gods_of_gravity_5.png"
+    caption: "Overpower your enemy at their home base"
 ---
 Gods of Gravity is a multiplayer arcade-style RTS game where you compete against friends in an epic showdown of celestial gods. Scoop up just the right ships (like Shield and Rocket) and fling them to capture a nearby planet, or open wormholes to teleport them across the solar system. Hold planets and moons to boost your production. And if you dare, capture the sun for the ultimate buff. Then send a massive fleet to conquer friends’ home planets. Last god standing wins.
 
