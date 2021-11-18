@@ -154,6 +154,14 @@ h3 {
   color: $default-text-color;
 }
 
+h4 {
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  line-height: 1.5;
+  text-align: left;
+  color: $default-text-color;
+}
+
 p {
   font-size: $body-font-size;
   font-weight: $body-font-weight;
@@ -170,6 +178,15 @@ p {
     text-align: left;
     color: $deemphasized-text-color;
     list-style: disc;
+    list-style-position: inside;
+  }
+  ol {
+    font-size: $body-font-size;
+    font-weight: $body-font-weight;
+    line-height: 1.5;
+    text-align: left;
+    color: $deemphasized-text-color;
+    list-style: decimal;
     list-style-position: inside;
   }
 
