@@ -4,7 +4,7 @@ order: 0
 title: "Gods of Gravity"
 hook: "Compete against friends in an epic showdown of celestial gods"
 platform: "vr"
-dates: "2021"
+dates: "2021 to Present"
 hasDemo: "false"
 youtubeID: "eGUfLopBv5o"
 images:
@@ -19,17 +19,18 @@ images:
 ---
 Gods of Gravity is a multiplayer arcade-style RTS game where you compete against friends in an epic showdown of celestial gods. Scoop up just the right ships (like Shield and Rocket) and fling them to capture a nearby planet, or open wormholes to teleport them across the solar system. Hold planets and moons to boost your production. And if you dare, capture the sun for the ultimate buff. Then send a massive fleet to conquer friends’ home planets. Last god standing wins.
 
-### [Play for free on App Lab](https://www.oculus.com/experiences/quest/3919415921458774/)
+### [Play for free on App Lab and Leave a Review](https://www.oculus.com/experiences/quest/3919415921458774/)
+### [Join the Discord Community](https://discord.gg/v3AuK92)
 
-### 2 to 5 Player Multiplayer:
+### 2 to 8 Player Multiplayer:
 * Eliminate your friends to take control of the solar system
-* Defeated players automatically join another team so everyone stays in the action
-* Unlock different Gods with unique powers, but be careful as friends who defeat you will gain them as well
-* Add intelligent bots to make the battle even crazier
+* Play premade scenarios or make your own
+* Command your own fleet or team up with friends against bots
+* Socialize with built-in, spatial voice chat
 
-### Single Player Campaign (BETA):
+### Single Player Campaign:
 * Take over the galaxy, one solar system at a time
-* Absorb defeated enemies to unlock new Gods with game-changing powers
+* Unlock new Gods with game-changing powers
 * Hone your skills on a variety of unique scenarios
 
 {% include project-gallery.html %}
