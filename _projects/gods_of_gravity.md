@@ -40,7 +40,7 @@ Gods of Gravity is a multiplayer arcade-style RTS game where you compete against
 #### Download from your mobile phone:
 1. Go to the [games store page](https://www.oculus.com/experiences/quest/3919415921458774/)
 2. Log in with your Oculus or Facebook account
-3. Press the “player later” button which will make the game appear in the app library within your headset
+3. Press the “play later” button which will make the game appear in the app library within your headset
 
 #### Or download from within the headset:
 1. Open the Oculus explorer or store
